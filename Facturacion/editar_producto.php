@@ -1,7 +1,7 @@
 <?php
 include 'producto_crud.php';
 $id = $_GET['id'];
-$producto = obtenerProductos($id);
+$producto = obtenerProducto($id);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     actualizarProducto($id, $_POST['nombre'], $_POST['descripcion'], $_POST['precio'], $_POST['categoria']);
